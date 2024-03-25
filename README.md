@@ -30,6 +30,7 @@ The file can be also written in Lua in Neovim.
 Where is the plugin directory?
 
 >	The "base" (root) directories conform to the XDG Base Directory Specification.
+>	```
 >	/.../
 >	CONFIG DIRECTORY (DEFAULT)
 >	                  $XDG_CONFIG_HOME            Nvim: stdpath("config")
@@ -40,6 +41,7 @@ Where is the plugin directory?
 >	                  $XDG_DATA_HOME              Nvim: stdpath("data")
 >	    Unix:         ~/.local/share              ~/.local/share/nvim
 >	    Windows:      ~/AppData/Local             ~/AppData/Local/nvim-data
+>	```
 >	>	:help base-directories
 
 A plugin installed by the user falls in the category of DATA. The recommended directory in the Manual is:
@@ -54,7 +56,7 @@ So installing `toggle-terminal` is copying `toggle-terminal.lua` into the `~/.lo
 
 	~/.local/share/nvim/site/plugin/toggle-terminal.lua
 
-As a user, you can put the plugin file anywhere you want as long as is in a **plugin** directory inside the directories in `runtimepath`. `:help load-plugins`. For example:
+As a user, you can put the plugin file anywhere you want as long as it is in a **plugin** directory inside the directories in `runtimepath`. `:help load-plugins`. For example:
 
 	~/.config/nvim/plugin/toggle-terminal.lua
 
